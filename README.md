@@ -33,14 +33,3 @@ Kaybetme(Fail Screen) Sayfasi:
 Kazanma(Win Screen) Sayfasi:
 
 ![Test Image 7](https://github.com/BerkayBaran/QuizApp/blob/main/Pictures/Win.JPG)
-
-# Mimari Yapı:
-
-
-![Test Image 8](https://github.com/BerkayBaran/QuizApp/blob/main/Pictures/MimariYapı1.JPG)
-
-![Test Image 9](https://github.com/BerkayBaran/QuizApp/blob/main/Pictures/MimariYapı2.JPG)
-
-
-
-
