@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="technology">TEKNOLOJİ</string>
+    <string name="sport">SPOR</string>
+    <string name="question">SORU :</string>
+    <string name="point">PUAN :</string>
+    <string name="lose">Oyun Bitti! Üzgünüm Kaybettiniz!</string>
+    <string name="win">Oyun Bitti! Tebrikler Kazandınız!</string>
+    <string name="home">ANA SAYFAYA DÖN</string>
+    <string name="exit">ÇIKIŞ</string>
+    <string name="next_question">DEVAM</string>
+    <string name="true_answer"> Cevap Doğru</string>
+    <string name="exit_app">Uygulamadan çıkılsın mı?</string>
+    <string name="yes">EVET</string>
+    <string name="no">HAYIR</string>
+    <string name="complete">Soru : 10/10 Puan : 1000</string>
+</resources>

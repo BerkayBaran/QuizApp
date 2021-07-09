@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/cardView_app"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="100dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:background="@mipmap/ic_launcher_quiz_app_round"
+            ></ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView_welcome_username"
+        android:layout_below="@id/cardView_app"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Hoşgeldin, kullanıcı"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        ></TextView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_technology"
+        android:layout_below="@id/textView_welcome_username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        >
+
+        <Button
+            android:id="@+id/button_technology"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/_light_green"
+            android:text="@string/technology"
+            android:textColor="@color/black"></Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_sport"
+        android:layout_below="@id/cardView_technology"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        >
+        <Button
+            android:id="@+id/button_sport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:background="@color/_light_green"
+            android:text="@string/sport"
+            ></Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_exit"
+        android:layout_below="@id/cardView_sport"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        >
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:background="@color/light_pink"
+            android:text="@string/exit"
+            ></Button>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

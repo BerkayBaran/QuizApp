@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView_title_category"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="TEKNOLOJİ"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/dodger_blue"
+        ></TextView>
+
+<TextView
+    android:id="@+id/textView_line"
+    android:layout_below="@id/textView_title_category"
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@drawable/ic_line_dashgap"
+    ></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_question_point"
+        android:layout_below="@id/textView_line"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+    <RelativeLayout
+        android:id="@+id/relativeLayout_question_point"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+      >
+
+        <TextView
+            android:id="@+id/textView_question_number_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/question"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/textView_question_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/textView_question_number_title"
+            android:gravity="center"
+            android:text="1/10"
+            android:textSize="18dp"></TextView>
+
+
+        <ImageView
+            android:id="@+id/imageView_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"></ImageView>
+
+        <TextView
+            android:id="@+id/textView_point_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/imageView_center"
+            android:gravity="center"
+            android:text="@string/point"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/textView_point"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/textView_point_title"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_question"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/cardView_question_point"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="15dp">
+        <TextView
+            android:id="@+id/textView_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Örnek soru"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            ></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_answer_a"
+        android:layout_below="@id/cardView_question"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        >
+        <Button
+            android:id="@+id/button_answer_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="A"
+            ></Button>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_answer_b"
+        android:layout_below="@id/cardView_answer_a"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        >
+        <Button
+            android:id="@+id/button_answer_b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="B"
+            ></Button>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_answer_c"
+        android:layout_below="@id/cardView_answer_b"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        >
+        <Button
+            android:id="@+id/button_answer_c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="C"
+            ></Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_answer_d"
+        android:layout_below="@id/cardView_answer_c"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        >
+        <Button
+            android:id="@+id/button_answer_d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="D"
+            ></Button>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
